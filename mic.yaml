@@ -1,4 +1,4 @@
-step: 1
+step: 2
 name: swatplus_test_002
 docker_image: dhardestylewis/swatplus_test_002:21.1.3
 framework: !!python/object/apply:mic.constants.Framework
@@ -9,3 +9,250 @@ container_name: swatplus_test_002_77a8b0d8
 github_repo_url: https://github.com/dhardestylewis/swatplus_test_002.git
 version: 21.1.3
 mint_component_url: https://raw.githubusercontent.com/dhardestylewis/swatplus_test_002/master/mint_component.zip
+configs:
+  file_cio:
+    path: file.cio
+    format: cio
+inputs:
+  soil_plant_ini:
+    path: soil_plant.ini
+    format: ini
+  hyd_sed_lte_cha:
+    path: hyd-sed-lte.cha
+    format: cha
+  field_fld:
+    path: field.fld
+    format: fld
+  management_sch:
+    path: management.sch
+    format: sch
+  aqu_unit_ele:
+    path: aqu_unit.ele
+    format: ele
+  rout_unit_ele:
+    path: rout_unit.ele
+    format: ele
+  channel_lte_cha:
+    path: channel-lte.cha
+    format: cha
+  aqu_cha_lin:
+    path: aqu_cha.lin
+    format: lin
+  rout_unit_con:
+    path: rout_unit.con
+    format: con
+  chan_surf_lin:
+    path: chan-surf.lin
+    format: lin
+  septic_sep:
+    path: septic.sep
+    format: sep
+  harv_ops:
+    path: harv.ops
+    format: ops
+  initial_aqu:
+    path: initial.aqu
+    format: aqu
+  landuse_lum:
+    path: landuse.lum
+    format: lum
+  rout_unit_rtu:
+    path: rout_unit.rtu
+    format: rtu
+  nutrients_sol:
+    path: nutrients.sol
+    format: sol
+  soils_sol:
+    path: soils.sol
+    format: sol
+  hru_con:
+    path: hru.con
+    format: con
+  lum_dtl:
+    path: lum.dtl
+    format: dtl
+  nutrients_cha:
+    path: nutrients.cha
+    format: cha
+  flo_con_dtl:
+    path: flo_con.dtl
+    format: dtl
+  hru_data_hru:
+    path: hru-data.hru
+    format: hru
+  septic_str:
+    path: septic.str
+    format: str
+  weather_sta_cli:
+    path: weather-sta.cli
+    format: cli
+  ccw01_pcp:
+    path: ccw01.pcp
+    format: pcp
+  ls_unit_def:
+    path: ls_unit.def
+    format: def
+  weather_wgn_cli:
+    path: weather-wgn.cli
+    format: cli
+  initial_cha:
+    path: initial.cha
+    format: cha
+  chandeg_con:
+    path: chandeg.con
+    format: con
+  parameters_bsn:
+    path: parameters.bsn
+    format: bsn
+  cntable_lum:
+    path: cntable.lum
+    format: lum
+  snow_sno:
+    path: snow.sno
+    format: sno
+  pesticide_pst:
+    path: pesticide.pst
+    format: pst
+  rout_unit_def:
+    path: rout_unit.def
+    format: def
+  fertilizer_frt:
+    path: fertilizer.frt
+    format: frt
+  ovn_table_lum:
+    path: ovn_table.lum
+    format: lum
+  res_rel_dtl:
+    path: res_rel.dtl
+    format: dtl
+  sweep_ops:
+    path: sweep.ops
+    format: ops
+  hydrology_cha:
+    path: hydrology.cha
+    format: cha
+  hydrology_hyd:
+    path: hydrology.hyd
+    format: hyd
+  pathogens_pth:
+    path: pathogens.pth
+    format: pth
+  aquifer_con:
+    path: aquifer.con
+    format: con
+  time_sim:
+    path: time.sim
+    format: sim
+  cons_practice_lum:
+    path: cons_practice.lum
+    format: lum
+  pcp_cli:
+    path: pcp.cli
+    format: cli
+  scen_lu_dtl:
+    path: scen_lu.dtl
+    format: dtl
+  urban_urb:
+    path: urban.urb
+    format: urb
+  plants_plt:
+    path: plants.plt
+    format: plt
+  tillage_til:
+    path: tillage.til
+    format: til
+  ls_unit_ele:
+    path: ls_unit.ele
+    format: ele
+  codes_bsn:
+    path: codes.bsn
+    format: bsn
+  graze_ops:
+    path: graze.ops
+    format: ops
+  chem_app_ops:
+    path: chem_app.ops
+    format: ops
+  sediment_cha:
+    path: sediment.cha
+    format: cha
+  channel_cha:
+    path: channel.cha
+    format: cha
+  print_prt:
+    path: print.prt
+    format: prt
+  om_water_ini:
+    path: om_water.ini
+    format: ini
+  topography_hyd:
+    path: topography.hyd
+    format: hyd
+  tmp_cli:
+    path: tmp.cli
+    format: cli
+  object_prt:
+    path: object.prt
+    format: prt
+  plant_ini:
+    path: plant.ini
+    format: ini
+  ccw01_tmp:
+    path: ccw01.tmp
+    format: tmp
+  aquifer_aqu:
+    path: aquifer.aqu
+    format: aqu
+  object_cnt:
+    path: object.cnt
+    format: cnt
+code_files: {}
+outputs:
+  success_fin:
+    path: success.fin
+    format: fin
+  hru_wb_aa_txt:
+    path: hru_wb_aa.txt
+    format: txt
+  channel_sd_yr_txt:
+    path: channel_sd_yr.txt
+    format: txt
+  basin_crop_yld_yr_txt:
+    path: basin_crop_yld_yr.txt
+    format: txt
+  outlet_out:
+    path: outlet.out
+    format: out
+  basin_wb_yr_txt:
+    path: basin_wb_yr.txt
+    format: txt
+  diagnostics_out:
+    path: diagnostics.out
+    format: out
+  hru_wb_day_txt:
+    path: hru_wb_day.txt
+    format: txt
+  channel_sdmorph_yr_txt:
+    path: channel_sdmorph_yr.txt
+    format: txt
+  hru_pw_aa_txt:
+    path: hru_pw_aa.txt
+    format: txt
+  basin_crop_yld_aa_txt:
+    path: basin_crop_yld_aa.txt
+    format: txt
+  basin_aqu_aa_txt:
+    path: basin_aqu_aa.txt
+    format: txt
+  basin_wb_aa_txt:
+    path: basin_wb_aa.txt
+    format: txt
+  crop_yld_aa_txt:
+    path: crop_yld_aa.txt
+    format: txt
+  basin_pw_yr_txt:
+    path: basin_pw_yr.txt
+    format: txt
+  files_out_out:
+    path: files_out.out
+    format: out

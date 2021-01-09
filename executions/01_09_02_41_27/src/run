@@ -1,0 +1,92 @@
+#!/bin/bash
+set +x
+set -e
+. .colors.sh
+
+BASEDIR=$PWD
+. $BASEDIR/io.sh 64 0 16 "$@"
+CURDIR=`pwd`
+## INPUTS VARIABLES
+soil_plant_ini=${INPUTS1}
+hyd_sed_lte_cha=${INPUTS2}
+field_fld=${INPUTS3}
+management_sch=${INPUTS4}
+aqu_unit_ele=${INPUTS5}
+rout_unit_ele=${INPUTS6}
+channel_lte_cha=${INPUTS7}
+aqu_cha_lin=${INPUTS8}
+rout_unit_con=${INPUTS9}
+chan_surf_lin=${INPUTS10}
+septic_sep=${INPUTS11}
+harv_ops=${INPUTS12}
+initial_aqu=${INPUTS13}
+landuse_lum=${INPUTS14}
+rout_unit_rtu=${INPUTS15}
+nutrients_sol=${INPUTS16}
+soils_sol=${INPUTS17}
+hru_con=${INPUTS18}
+lum_dtl=${INPUTS19}
+nutrients_cha=${INPUTS20}
+flo_con_dtl=${INPUTS21}
+hru_data_hru=${INPUTS22}
+septic_str=${INPUTS23}
+weather_sta_cli=${INPUTS24}
+ccw01_pcp=${INPUTS25}
+ls_unit_def=${INPUTS26}
+weather_wgn_cli=${INPUTS27}
+initial_cha=${INPUTS28}
+chandeg_con=${INPUTS29}
+parameters_bsn=${INPUTS30}
+cntable_lum=${INPUTS31}
+snow_sno=${INPUTS32}
+pesticide_pst=${INPUTS33}
+rout_unit_def=${INPUTS34}
+fertilizer_frt=${INPUTS35}
+ovn_table_lum=${INPUTS36}
+res_rel_dtl=${INPUTS37}
+sweep_ops=${INPUTS38}
+hydrology_cha=${INPUTS39}
+hydrology_hyd=${INPUTS40}
+pathogens_pth=${INPUTS41}
+aquifer_con=${INPUTS42}
+time_sim=${INPUTS43}
+cons_practice_lum=${INPUTS44}
+pcp_cli=${INPUTS45}
+scen_lu_dtl=${INPUTS46}
+urban_urb=${INPUTS47}
+plants_plt=${INPUTS48}
+tillage_til=${INPUTS49}
+ls_unit_ele=${INPUTS50}
+codes_bsn=${INPUTS51}
+graze_ops=${INPUTS52}
+chem_app_ops=${INPUTS53}
+sediment_cha=${INPUTS54}
+channel_cha=${INPUTS55}
+print_prt=${INPUTS56}
+om_water_ini=${INPUTS57}
+topography_hyd=${INPUTS58}
+tmp_cli=${INPUTS59}
+object_prt=${INPUTS60}
+plant_ini=${INPUTS61}
+ccw01_tmp=${INPUTS62}
+aquifer_aqu=${INPUTS63}
+object_cnt=${INPUTS64}
+
+
+## PARAMETERS VARIABLES
+
+
+set -xe
+
+####### WRITE YOUR INVOCATION LINE AFTER THIS COMMENT
+
+    
+pushd .
+swatplus_exe
+popd
+
+set +x
+echo -e "$(c G)[success] The model has exited with code SUCCESS"
+####### WRITE YOUR INVOCATION LINE BEFORE THIS COMMENT
+cd $BASEDIR
+. $BASEDIR/output.sh
