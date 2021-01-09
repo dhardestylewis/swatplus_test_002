@@ -70,3 +70,23 @@ mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameter
 mic   github.py          INFO     Creating the git repository
 mic   github.py          INFO     Compressing code
 mic   github.py          INFO     Creating a new commit
+mic   commands.py        ERROR    Upload failed: Profile doesn't exists
+Traceback (most recent call last):
+  File "/opt/conda/lib/python3.8/site-packages/mic/click_encapsulate/commands.py", line 687, in upload
+    push(mic_config_path.parent, mic_config_path, name, profile)
+  File "/opt/conda/lib/python3.8/site-packages/mic/publisher/github.py", line 35, in push
+    url = check_create_remote_repo(repo, profile, repository_name)
+  File "/opt/conda/lib/python3.8/site-packages/mic/publisher/github.py", line 126, in check_create_remote_repo
+    repo_github = github_create_repo(profile, model_name)
+  File "/opt/conda/lib/python3.8/site-packages/mic/publisher/github.py", line 255, in github_create_repo
+    git_token, git_username = github_config(profile)
+  File "/opt/conda/lib/python3.8/site-packages/mic/publisher/github.py", line 295, in github_config
+    credentials = get_credentials(profile)
+  File "/opt/conda/lib/python3.8/site-packages/mic/credentials.py", line 22, in get_credentials
+    raise ValueError("Profile doesn't exists")
+ValueError: Profile doesn't exists
+mic   _utils.py          INFO     <=================>
+mic   _utils.py          INFO     Command: {'name': 'upload', 'command_parameters': {'mic_file': {'value': '/tmp/mint/mic/mic.yaml', 'type': 'str'}, 'profile': {'value': 'default', 'type': 'str'}, 'model_configuration': {'value': True, 'type': 'bool'}, 'data_transformation': {'value': None, 'type': 'NoneType'}}}
+mic   github.py          INFO     Creating the git repository
+mic   github.py          INFO     Compressing code
+mic   github.py          INFO     Creating a new commit
