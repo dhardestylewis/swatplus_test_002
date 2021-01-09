@@ -1,0 +1,8 @@
+step: 1
+name: swatplus_test_002
+docker_image: swatplus_test_002:latest
+framework: !!python/object/apply:mic.constants.Framework
+- !!python/tuple
+  - general
+  - mintproject/generic:latest
+container_name: swatplus_test_002_77a8b0d8
